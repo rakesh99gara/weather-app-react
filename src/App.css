@@ -1,38 +1,138 @@
 .App {
   text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  font-size: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  width: 25%;
+  border-bottom: 1;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-width: 1px;
+  font-family: inherit;
+  padding: 0;
+  height: 48px;
+  font-size: 1em;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #ffffff;
+  transition: all 0.15s ease;
+  padding-left: 0.3em;
+}
+input:focus {
+  outline: red;
+  stroke: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather > div {
+  width: 50%;
   display: flex;
-  flex-direction: column;
+  margin-top: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  color: #ffffff;
+  fill: #ffffff;
+  margin-right: 0.5em;
+}
+
+form {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}
+
+.left {
+  margin-top: 0;
+  align-items: flex-start;
+  margin-right: 5em;
+}
+
+.left > p {
+  margin-bottom: 0px;
+}
+
+.img-temp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 0px;
+}
+.right p {
+  font-size: 0.5em;
+  letter-spacing: 0.1em;
+  font-weight: 1;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+.right {
+  text-align: right;
+}
+
+.right .time {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.left p {
+  font-size: 1em;
+  font-weight: 10;
+  letter-spacing: 0.1em;
+}
+
+.reports {
+  display: flex;
+  width: 50%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.report {
+  margin: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.report p {
+  margin: 0;
+}
+
+.report p {
+  font-size: 0.7em;
+  font-weight: 10;
+  letter-spacing: 0.1em;
+}
+
+.report .max {
+  font-size: 0.8em;
+  font-weight: 20;
+}
+
+.report .min {
+  font-size: 0.6em;
+  font-weight: 10;
+}
+
+.temp {
+  font-size: 2em;
+}
+
+.degree {
+  margin-bottom: 20px;
 }
